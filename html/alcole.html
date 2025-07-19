@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Organic Compounds</title>
+    <script src="https://web.chemdoodle.com/downloads/ChemDoodleWeb.js"></script>
+    <style>
+        .molecule {
+            display: inline-block;
+            margin: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Organic Compounds</h1>
+
+    <!-- Methane -->
+    <div class="molecule">
+        <canvas id="canvas-methane" width="150" height="150"></canvas>
+        <div>Methane (CH₄)</div>
+    </div>
+
+    <!-- Methanol -->
+    <div class="molecule">
+        <canvas id="canvas-methanol" width="150" height="150"></canvas>
+        <div>Methanol (CH₃OH)</div>
+    </div>
+
+    <script>
+        // Methane: SMILES = "C"
+        new ChemDoodle.ViewerCanvas('canvas-methane', 150, 150)
+            .loadMolecule('C');
+
+        // Methanol: SMILES = "CO"
+        new ChemDoodle.ViewerCanvas('canvas-methanol', 150, 150)
+            .loadMolecule('CO');
+
+        // Add additional compounds here...
+        // Example:
+        // let canvas = new ChemDoodle.ViewerCanvas('canvas-ethanol', 150, 150);
+        // canvas.loadMolecule('CCO');  // Ethanol
+    </script>
+</body>
+
+</html>

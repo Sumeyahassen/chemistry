@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organic Chimestry</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Organic Chemistry</title>
 </head>
 
 <body>
     <header>
         <div class="header-contaner">
             <h1>quizlet</h1>
-            <div><samp>stude tools</samp></div>
-            <div><samp>subjactes</samp></div>
+            <div><span>study tools</span></div>
+            <div><span>subjects</span></div>
             <div class="search-bar">
-                <input type="text" placeholder="Flashcard sets ,textbooks,question">
+                <input class="search" type="text" placeholder="Flashcard sets ,textbooks,question">
             </div>
-            <div><span>+ create</span></div>
+            <div><span class="create">+ create</span></div>
             <button>log in</button>
         </div>
     </header>
@@ -31,20 +32,23 @@
 
     <!-- *************************************************************** -->
     <section class="title">
-        <div class="flash-cards">
-            <span class="scince">scince</span>/
-            <span class="chemistry">chemistry</span>/
-            <span class="Organic-chemistry">organic chemistry</span>
-        </div>
+        <nav class="section1">
+            <div class="flash-cards">
+                <span class="scince"><a href="">scince</a></span>/
+                <span class="chemistry"><a href="">chemistry</a></span>/
+                <span class="Organic-chemistry"><a href="">organic chemistry</a></span>
+            </div>
+            <div class="buttons">
+                <button>💾 save</button>
+                <button>⎙</button>
+                <button>…</button>
+            </div>
+        </nav>
         <div class="sub-title">
             <h1>Organic Chemistry</h1>
             <p>⭐3.6(65 reviews)</p>
         </div>
-        <div class="buttons">
-            <button>💾 save</button>
-            <button>⎙</button>
-            <button>…</button>
-        </div>
+
     </section>
 
 
@@ -52,6 +56,22 @@
 
 
     <!-- ***************************************************************** -->
+    <section class="supporter-material">
+        <div class="supporter-contaner">
+            <div class="flashcaed">📚flashcard</div>
+            <div class="test">📝test</div>
+            <div class="match">📊match</div>
+            <div class="learn">🎯learn</div>
+            <div class="block">🧱blocks</div>
+        </div>
+        <div>
+            <button class="">🦢</button>
+            <sub>crated by</sub>
+            <pre><b>quizlette255568</b><span>teacher</span></pre>
+
+        </div>
+    </section>
+    <!-- **************************************************************** -->
     <section class="cards">
         <div class="card-contaner">
             <div class="card-wriper">
@@ -75,22 +95,6 @@
             </div>
         </div>
 
-    </section>
-    <!-- **************************************************************** -->
-    <section class="supporter-material">
-        <div class="supporter-contaner">
-            <div class="flashcaed">📚flashcard</div>
-            <div class="test">📝test</div>
-            <div class="match">📊match</div>
-            <div class="learn">🎯learn</div>
-            <div class="block">🧱blocks</div>
-        </div>
-        <div>
-            <button class="">🦢</button>
-            <sub>crated by</sub>
-            <pre><b>quizlette255568</b><span>teacher</span></pre>
-
-        </div>
     </section>
     <!-- *************************************************************** -->
     <section class="scrole-card-contaner">
@@ -134,6 +138,7 @@
         <!--  -->
         <div class="page-contant">
             <div class="about">
+                <h3>about</h3>
                 <ul>
                     <li><a href="">About Quizlet</a></li>
                     <li><a href="">How Quizlet works</a></li>
@@ -141,6 +146,7 @@
                 </ul>
             </div>
             <div class="for-students">
+                <h3>for-students</h3>
                 <ul>
                     <li><a href="">flashcaed</a></li>
                     <li><a href="">test</a></li>
@@ -151,6 +157,7 @@
                 </ul>
             </div>
             <div class="for-teachers">
+                <h3>for-teachers</h3>
                 <ul>
                     <li><a href="">live</a></li>
                     <li><a href="">blog</a></li>
@@ -158,6 +165,7 @@
                 </ul>
             </div>
             <div class="resourse">
+                <h3>resourse</h3>
                 <ul>
                     <li><a href="">Help center</a></li>
                     <li><a href="">Sign up</a></li>
@@ -175,75 +183,87 @@
                 </ul>
             </div>
             <div class="language">
-
+                <h3>language</h3>
                 <select name="language" id="">
                     <option value="english">
                         english(USA)
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
                     </option>
                 </select>
 
             </div>
             <div class="app">
+                <h3>app</h3>
                 <ul>
                     <li><a href=""><img src="" alt=""></a></li>
                     <li><a href=""><img src="" alt=""></a></li>
                 </ul>
             </div>
-            <hr>
-            <div class="country">
-                <div class="country-wriper">
+
+        </div>
+        <hr>
+        <div class="country">
+            <div class="country-wriper">
+                <h1>countrys</h1>
+                
+                   <div>
                     <ul>
-                        <li><a href="">United States</a></li>
-                        <li><a href="">canada</a></li>
-                        <li><a href="">united kingdome</a></li>
-                        <li><a href="">austeraliya</a></li>
-                        <li><a href="">new ziland</a></li>
-                        <li><a href="">germeny</a></li>
-                        <li><a href="">france</a></li>
-                        <li><a href="">spane</a></li>
-                        <li><a href="">italy</a></li>
-                        <li><a href="">japane</a></li>
-                        <li><a href="">south koriya</a></li>
-                        <li><a href="">indiya</a></li>
-                        <li><a href="">china</a></li>
-                        <li><a href="">mexico</a></li>
-                        <li><a href="">swedinden</a></li>
-                        <li><a href="">nezerland</a></li>
-                        <li><a href="">swewuzerland</a></li>
-                        <li><a href="">brazil</a></li>
-                        <li><a href="">poland</a></li>
-                        <li><a href="">turkey</a></li>
-                        <li><a href="">ukrane</a></li>
-                        <li><a href="">taywon</a></li>
-                        <li><a href="">vitneham</a></li>
-                        <li><a href="">indonoziya</a></li>
-                        <li><a href="">pilippenes</a></li>
-                        <li><a href="">russia</a></li>
+                    <li><a href="">United States</a></li>
+                    <li><a href="">canada</a></li>
+                    <li><a href="">united kingdome</a></li>
+                    <li><a href="">austeraliya</a></li>
+                    <li><a href="">new ziland</a></li>
+                    <li><a href="">germeny</a></li>
+                    <li><a href="">france</a></li>
+                    <li><a href="">spane</a></li>
+                    <li><a href="">italy</a></li>
+                    <li><a href="">japane</a></li>
+                    <li><a href="">south koriya</a></li>
+                    <li><a href="">indiya</a></li>
                     </ul>
-                </div>
+                   </div>
+                    <div>
+                        <ul>
+                            <li><a href="">china</a></li>
+                            <li><a href="">mexico</a></li>
+                            <li><a href="">swedinden</a></li>
+                            <li><a href="">nezerland</a></li>
+                            <li><a href="">swewuzerland</a></li>
+                            <li><a href="">brazil</a></li>
+                            <li><a href="">poland</a></li>
+                            <li><a href="">turkey</a></li>
+                            <li><a href="">ukrane</a></li>
+                            <li><a href="">taywon</a></li>
+                            <li><a href="">vitneham</a></li>
+                            <li><a href="">indonoziya</a></li>
+                            <li><a href="">pilippenes</a></li>
+                            <li><a href="">russia</a></li>
+                        </ul>
+                    </div>
+                </ul>
             </div>
         </div>
         <!-- ############################# -->
 
         <div class="contact">
             <div class="socal-mediay">
-                <ul><li><a href=""></a></li>
-                <li><a href="">tictoc</a></li>
-                <li><a href="">x</a></li>
-                <li><a href="">fasebook</a></li>
-                <li><a href="">instageram</a></li>
-                <li><a href="">youtube</a></li>
-                <li><a href="">linkdin</a></li>
-            </ul>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href="">tictoc</a></li>
+                    <li><a href="">x</a></li>
+                    <li><a href="">fasebook</a></li>
+                    <li><a href="">instageram</a></li>
+                    <li><a href="">youtube</a></li>
+                    <li><a href="">linkdin</a></li>
+                </ul>
             </div>
             <p> &copy; Quizlet ,inc.</p>
         </div>
