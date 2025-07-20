@@ -7,6 +7,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: whitesmoke;
+
   /* margin: 20px; */
 }
 .header-contaner {
@@ -47,10 +48,17 @@ body {
     cursor: pointer;
     font-weight: bold;
   }
+  .buttons{
+    button{
+    i{
+      font-size: 30px;
+    }
+    }
+  }
 }
 /*###################################################################### */
 .title {
-    padding: 5%;
+  padding: 5%;
   text-align: left;
   margin-left: 100px;
   color: rgb(78, 78, 74);
@@ -90,7 +98,7 @@ body {
 }
 /* ################################################################# */
 .supporter-material {
-    margin-left: 10%;
+  margin-left: 10%;
   .supporter-contaner {
     display: grid;
     grid-template-columns: 0.8fr 0.8fr 0.8fr;
@@ -105,14 +113,68 @@ body {
       text-align: center;
       font-size: xx-large;
       cursor: pointer;
-      .block,.learn,.match,.test,.flashcaed{
+      .block,
+      .learn,
+      .match,
+      .test,
+      .flashcaed {
         background-color: #e6e6ec;
         padding: 20px;
         border-radius: 10px;
         margin: 10px;
         cursor: pointer;
       }
-      
+    }
+  }
+}
+/* ########################################################### */
+.chemical-contener {
+  .element-termes {
+    h1 {
+      text-align: left;
+      padding-left: 10%;
+    }
+  }
+  .element-term-container {
+    width: 80%;
+    height: 500vh;
+    margin: 10%;
+    background-color: rgb(238, 238, 238);
+    padding: 3vh 0vh;
+    border-radius: 20px;
+
+    text-align: center;
+    align-items: center;
+    .element {
+      display: grid;
+      grid-template-columns: 10fr;
+      grid-gap: 5%;
+      background-color: #fff;
+      padding: 15vh 60vh;
+      margin: 2%;
+      border-radius: 5%;
+      .contant {
+        width: 10%;
+        display: flex;
+        justify-content: start;
+        h3 {
+          padding-left :0px;
+          font-size: 20px;
+          color: rgb(18, 17, 17);
+          text-align: left;
+          align-items: center;
+        }
+        .vertical {
+          border-left: 2px solid rgb(48, 47, 47);
+          height: 150px;
+        }
+        img{
+          width: 100px;
+          height: 100px;
+          margin-left: 20px;
+          border-radius: 50%;
+        }
+      }
     }
   }
 }
